@@ -10,11 +10,6 @@ namespace OpenTKSkia
 {
     class MainClass
     {
-        private static GRContext grContext;
-        private static GRBackendRenderTarget renderTarget;
-        private const SKColorType colorType = SKColorType.Rgba8888;
-        private const GRSurfaceOrigin surfaceOrigin = GRSurfaceOrigin.BottomLeft;
-        private static SKSurface surface;
 
         public static void Main(string[] args)
         {
@@ -23,6 +18,7 @@ namespace OpenTKSkia
             var mode = GraphicsMode.Default;
             MainWindow win = new MainWindow();
             var glWidget = new SkiaGLWidget();
+            win.DeleteEvent += (o, a) => { glWidget.Dispose(); };
             glWidget.RenderFrame += RenderFrame;
             win.Add(glWidget);
             win.ShowAll();

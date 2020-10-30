@@ -20,6 +20,14 @@ namespace OpenTKSkia
         {
         }
 
+        public override void Dispose()
+        {
+            surface?.Dispose();
+            renderTarget?.Dispose();
+            grContext?.Dispose();
+            base.Dispose();
+        }
+
         protected override void OnRenderFrame()
         {
             // create the contexts if not done already
