@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKSkiaGtk2", "OpenTKSkiaGtk2\OpenTKSkiaGtk2.csproj", "{E9550F43-5C73-4C2E-90C2-B5D05477B76F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9550F43-5C73-4C2E-90C2-B5D05477B76F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{E9550F43-5C73-4C2E-90C2-B5D05477B76F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{E9550F43-5C73-4C2E-90C2-B5D05477B76F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{E9550F43-5C73-4C2E-90C2-B5D05477B76F}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
